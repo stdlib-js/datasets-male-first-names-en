@@ -20,7 +20,7 @@ limitations under the License.
 
 # Male First Names
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > A [list][@ward:2002a] of common male first names in English speaking countries.
 
@@ -180,7 +180,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/female-first-names-en`][@stdlib/datasets/female-first-names-en]: A list of common female first names in English speaking countries.
+-   <span class="package-name">[`@stdlib/datasets/female-first-names-en`][@stdlib/datasets/female-first-names-en]</span><span class="delimiter">: </span><span class="description">A list of common female first names in English speaking countries.</span>
 
 </section>
 
@@ -226,8 +226,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-male-first-names-en/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-male-first-names-en?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/datasets-male-first-names-en.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/datasets-male-first-names-en/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
