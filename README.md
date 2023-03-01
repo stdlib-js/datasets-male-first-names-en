@@ -24,14 +24,31 @@ limitations under the License.
 
 > A [list][@ward:2002a] of common male first names in English speaking countries.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-male-first-names-en
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import names from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-male-first-names-en@deno/mod.js';
+var names = require( '@stdlib/datasets-male-first-names-en' );
 ```
 
 #### names()
@@ -68,9 +85,9 @@ var data = names();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import names from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-male-first-names-en@deno/mod.js';
+var floor = require( '@stdlib/math-base-special-floor' );
+var randu = require( '@stdlib/random-base-randu' );
+var names = require( '@stdlib/datasets-male-first-names-en' );
 
 var data = names();
 var len = data.length;
@@ -88,7 +105,63 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/datasets-male-first-names-en-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: male-first-names-en [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ male-first-names-en
+Aaron
+Ab
+Abba
+Abbe
+...
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 * * *
 
@@ -118,7 +191,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/datasets/female-first-names-en`][@stdlib/datasets/female-first-names-en]</span><span class="delimiter">: </span><span class="description">A list of common female first names in English speaking countries.</span>
+-   <span class="package-name">[`@stdlib/datasets-female-first-names-en`][@stdlib/datasets/female-first-names-en]</span><span class="delimiter">: </span><span class="description">A list of common female first names in English speaking countries.</span>
 
 </section>
 
@@ -133,7 +206,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -178,6 +251,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cli-section]: https://github.com/stdlib-js/datasets-male-first-names-en#cli
+[cli-url]: https://github.com/stdlib-js/datasets-male-first-names-en/tree/cli
+[@stdlib/datasets-male-first-names-en]: https://github.com/stdlib-js/datasets-male-first-names-en/tree/main
+
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -198,7 +275,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/female-first-names-en]: https://github.com/stdlib-js/datasets-female-first-names-en/tree/deno
+[@stdlib/datasets/female-first-names-en]: https://github.com/stdlib-js/datasets-female-first-names-en
 
 <!-- </related-links> -->
 
