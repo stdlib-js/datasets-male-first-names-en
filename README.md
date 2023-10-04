@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import names from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-male-first-names-en@esm/index.mjs';
+import names from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-male-first-names-en@v0.1.1-esm/index.mjs';
 ```
 
 #### names()
@@ -86,7 +86,7 @@ var data = names();
 
 import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import names from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-male-first-names-en@esm/index.mjs';
+import names from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-male-first-names-en@v0.1.1-esm/index.mjs';
 
 var data = names();
 var len = data.length;
