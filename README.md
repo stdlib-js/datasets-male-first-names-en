@@ -35,17 +35,92 @@ limitations under the License.
 
 > A [list][@ward:2002a] of common male first names in English speaking countries.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/datasets-male-first-names-en
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
+
+## Usage
+
+```javascript
+var names = require( '@stdlib/datasets-male-first-names-en' );
+```
+
+#### names()
+
+Returns a [list][@ward:2002a] of common male first names (also known as [given][given-name] or personal names) in English speaking countries.
+
+```javascript
+var data = names();
+/* returns
+    [
+        'Aaron',
+        'Ab',
+        'Abba',
+        'Abbe',
+        'Abbey',
+        'Abbie',
+        'Abbot',
+        'Abbott',
+        ...
+    ]
+*/
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+<!-- TODO: more creative example. -->
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var floor = require( '@stdlib/math-base-special-floor' );
+var randu = require( '@stdlib/random-base-randu' );
+var names = require( '@stdlib/datasets-male-first-names-en' );
+
+var data = names();
+var len = data.length;
+var idx;
+var i;
+
+// Select random names from the list...
+for ( i = 0; i < 100; i++ ) {
+    idx = floor( randu()*len );
+    console.log( data[ idx ] );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -63,7 +138,7 @@ npm install -g @stdlib/datasets-male-first-names-en-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: male-first-names-en [options]
@@ -80,7 +155,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ male-first-names-en
@@ -123,9 +198,10 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 <section class="related">
 
+* * *
+
 ## See Also
 
--   <span class="package-name">[`@stdlib/datasets-male-first-names-en`][@stdlib/datasets-male-first-names-en]</span><span class="delimiter">: </span><span class="description">a list of common male first names in English speaking countries.</span>
 -   <span class="package-name">[`@stdlib/datasets-female-first-names-en`][@stdlib/datasets/female-first-names-en]</span><span class="delimiter">: </span><span class="description">A list of common female first names in English speaking countries.</span>
 
 </section>
@@ -145,7 +221,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -153,7 +229,7 @@ For more information on the project, filing bug reports and feature requests, an
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -163,8 +239,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-male-first-names-en-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-male-first-names-en-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-male-first-names-en.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-male-first-names-en
 
 [test-image]: https://github.com/stdlib-js/datasets-male-first-names-en/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/datasets-male-first-names-en/actions/workflows/test.yml?query=branch:main
